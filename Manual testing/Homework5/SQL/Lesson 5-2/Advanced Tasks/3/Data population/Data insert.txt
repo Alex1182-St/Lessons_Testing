@@ -1,0 +1,31 @@
+
+Таблица project
+
+INSERT INTO `lesson5_2`.`project` (`name`) VALUES 
+('ProjectA'),
+('ProjectB'),
+('ProjectC'),
+('ProjectD');
+
+Таблица assign
+
+INSERT INTO `lesson5_2`.`assign` (`p_id`, `e_id`) VALUES 
+('1', '1'),
+('1', '2'),
+('2', '3'),
+('2', '4'),
+('3', '4');
+INSERT INTO `lesson5_2`.`assign` (`p_id`) VALUES 
+('4');
+INSERT INTO `lesson5_2`.`assign` (`e_id`) VALUES 
+('5');
+
+
+Таблица empl
+
+INSERT INTO `lesson5_2`.`empl` ( `Name`, `Salary`) VALUES 
+('Sidorenko', '900'),
+('Petrenko', '900'),
+('Ivanenko', '1200'),
+('Ostapchuk', '900'),
+('Proday Voda', '900');

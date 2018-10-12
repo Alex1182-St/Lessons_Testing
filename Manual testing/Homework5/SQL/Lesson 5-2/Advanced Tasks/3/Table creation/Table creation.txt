@@ -1,0 +1,26 @@
+STEP-1 
+
+CREATE SCHEMA lesson5_2
+
+
+STEP-2
+
+CREATE TABLE lesson5_2.project (
+`p_id` INT NOT NULL AUTO_INCREMENT,
+`name` varchar(50) NULL,
+PRIMARY KEY (`p_id`)
+)
+
+CREATE TABLE lesson5_2.assign (
+`NumberInOrder` INT NOT NULL AUTO_INCREMENT,
+`p_id` INT NULL,
+`e_id` INT NULL,
+PRIMARY KEY (`NumberInOrder`)
+)
+
+CREATE TABLE lesson5_2.empl (
+`e_id` INT NOT NULL AUTO_INCREMENT,
+`Name` varchar(50) NULL,
+`Salary` varchar(50) NULL,
+PRIMARY KEY (`e_id`)
+)

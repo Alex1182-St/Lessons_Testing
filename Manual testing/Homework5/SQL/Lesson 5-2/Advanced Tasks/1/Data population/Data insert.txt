@@ -1,0 +1,26 @@
+
+Таблица customers
+
+INSERT INTO `lesson5_2`.`customers` (`Name`, `Age`, `CountryID`) VALUES 
+('Bruce Lee', '100', '5'),
+('Bruce Willis', '50', '37'),
+('Anthony Hopkins', '70', '1'),
+('Vinnie Jones', '50', '15');
+
+
+Таблица orders
+
+INSERT INTO `lesson5_2`.`orders` (`OrderID`, `CustomerID`, `Status`, `Price`) VALUES 
+('999', '2', 'Complete', '100'),
+('1000', '3', 'In progress', '200'),
+('1001', '1', 'Open', '50'),
+('1002', '4', 'Complete', '300');
+
+
+Таблица country
+
+INSERT INTO `lesson5_2`.`country` (`ID`, `Name`) VALUES 
+('1', 'Ukraine'),
+('5', 'USA'),
+('15', 'Spain'),
+('37', 'UK');

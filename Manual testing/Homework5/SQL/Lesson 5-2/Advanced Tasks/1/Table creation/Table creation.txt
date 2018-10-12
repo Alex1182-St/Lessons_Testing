@@ -1,0 +1,35 @@
+STEP-1 
+
+CREATE SCHEMA lesson5_2
+
+
+STEP-2
+
+CREATE TABLE `lesson5_2`.`customers` (
+  `CustomerID` INT AUTO_INCREMENT,
+  `Name` VARCHAR(50) NULL,
+  `Age` INT NULL,
+  `CountryID` INT NULL,
+  PRIMARY KEY (`CustomerID`)
+  );
+ 
+ 
+STEP-3
+
+CREATE TABLE `lesson5_2`.`orders` (
+  `OrderID` INT NOT NULL,
+  `CustomerID` INT NULL,
+  `Status` VARCHAR(50) NULL,
+  `Price` INT NULL,
+  PRIMARY KEY (`OrderID`)
+  );
+  
+  
+STEP-4
+
+
+CREATE TABLE `lesson5_2`.`country` (
+  `ID` INT NOT NULL,
+  `Name` VARCHAR(50) NULL,
+  PRIMARY KEY (`ID`)
+  );

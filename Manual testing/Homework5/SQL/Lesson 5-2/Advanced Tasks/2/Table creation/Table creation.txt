@@ -1,0 +1,37 @@
+STEP-1 
+
+CREATE SCHEMA lesson5_2
+
+
+STEP-2
+
+CREATE TABLE lesson5_2.instrument (
+`InstrumentId` INT NOT NULL AUTO_INCREMENT,
+`ReportingContextId` INT NULL,
+`InstrumentCode` INT NULL,
+PRIMARY KEY (`InstrumentId`)
+)
+
+CREATE TABLE lesson5_2.rating (
+`RatingId` INT NOT NULL AUTO_INCREMENT,
+`ReportingContextId` INT NULL,
+`RatingValue` varchar(50) NULL,
+PRIMARY KEY (`RatingId`)
+)
+
+CREATE TABLE lesson5_2.ratingagency (
+`RatingAgencyId` INT NOT NULL AUTO_INCREMENT,
+`ReportingContextId` INT NULL,
+`RatingAgencyName` varchar(50) NULL,
+PRIMARY KEY (`RatingAgencyId`)
+)
+
+CREATE TABLE lesson5_2.ratingtype (
+`RatingTypeId` INT NOT NULL AUTO_INCREMENT,
+`ReportingContextId` INT NULL,
+`RatingTypeCode` varchar(50) NULL,
+PRIMARY KEY (`RatingTypeId`)
+)
+
+
+

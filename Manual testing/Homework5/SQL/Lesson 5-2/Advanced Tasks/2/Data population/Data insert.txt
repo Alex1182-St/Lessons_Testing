@@ -1,0 +1,36 @@
+
+Таблица instrument
+
+INSERT INTO `lesson5_2`.`instrument` (`ReportingContextId`, `InstrumentCode`) VALUES 
+('1', '101929023'),
+('2', '103530745'),
+('3', '103530745'),
+('4', '106662608'),
+('9', '114313533');
+
+Таблица rating
+
+INSERT INTO `lesson5_2`.`rating` (`ReportingContextId`, `RatingValue`) VALUES 
+('1', '(P)Ba2'),
+('2', 'Baa1'),
+('3', 'Baa2'),
+('4', '(P)B2'),
+('9', 'BBB-f');
+
+Таблица ratingagency 
+
+INSERT INTO `lesson5_2`.`ratingagency` (`ReportingContextId`, `RatingAgencyName`) VALUES 
+('1', 'Moody"s'),
+('2', 'Moody"s'),
+('3', 'Moody"s'),
+('4', 'Moody"s'),
+('9', 'Standard & Poor"s');
+
+Таблица ratingtype
+
+INSERT INTO `lesson5_2`.`ratingtype` (`ReportingContextId`, `RatingTypeCode`) VALUES 
+('1', 'LT'),
+('2', 'LT'),
+('3', 'LT'),
+('4', 'LT'),
+('9', 'Ru');
