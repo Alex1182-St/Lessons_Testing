@@ -1,0 +1,16 @@
+STEP-1 
+
+CREATE SCHEMA lesson5_2
+
+
+STEP-2
+
+CREATE TABLE lesson5_2.services (
+`Id (PK)` INT NOT NULL AUTO_INCREMENT,
+`ClientId` INT NOT NULL,
+`ServiceId` INT NULL,
+`Date` DATE NOT NULL,
+`RegionId` INT NOT NULL,
+PRIMARY KEY (`Id (PK)`)
+)
+
