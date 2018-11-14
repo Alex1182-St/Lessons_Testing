@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="leanTesting.TC1_LeanTestingRegisterExcelData">
+      <class name="leanTesting.TC10_RegisterGithubBitBucketButtons">
         <methods>
-          <include name="LeanTestingRegister" invocation-numbers="0 1 2 3 6 7 8 9"/>
-          <include name="tearDown"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="registerWithGitHub"/>
         </methods>
-      </class> <!-- leanTesting.TC1_LeanTestingRegisterExcelData -->
+      </class> <!-- leanTesting.TC10_RegisterGithubBitBucketButtons -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
