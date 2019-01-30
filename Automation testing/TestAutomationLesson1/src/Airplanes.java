@@ -3,7 +3,18 @@ public class Airplanes{
     public void main(String[] args) { // на static "ругается", static убрал
 
 
-        Airplane newAirplane = newAirplane();
+        Airplane newAirplane = new Airplane ();
+
+        System.out.println(newAirplane.getNameOfPlane());
+        newAirplane.setNameOfPlane();
+        System.out.println(newAirplane.getNameOfPlane());
+
+        System.out.println(newAirplane.getQuantity());
+
+        System.out.println(newAirplane.getFuelCapacity());
+
+        System.out.println(newAirplane.getIfRefuel());
+
 
         Airplane AN225 = new Airplane("Antonov An-225 Mriya", 2, 1000, true);
 
