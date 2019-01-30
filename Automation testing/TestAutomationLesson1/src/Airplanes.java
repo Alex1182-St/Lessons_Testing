@@ -2,6 +2,9 @@ public class Airplanes{
 
     public void main(String[] args) { // на static "ругается", static убрал
 
+
+        Airplane newAirplane = newAirplane();
+
         Airplane AN225 = new Airplane("Antonov An-225 Mriya", 2, 1000, true);
 
         System.out.println(AN225.getNameOfPlane()); //выведет имя "Antonov An-225 Mriya"
@@ -12,26 +15,26 @@ public class Airplanes{
 
         System.out.println(AN225.getFuelCapacity()); // выведет "1000"
 
-        System.out.println(AN225.getIsRefuel()); // выведет "FUEL IS NOT ENOUGH TO FLY"
+        System.out.println(AN225.getIfRefuel()); // выведет "FUEL IS NOT ENOUGH TO FLY"
     }
 
     public class Airplane {
 
-        String typeOfAirplane; // по умолчанию "паблик"
-        String nameOfPlane; // по умолчанию "паблик"
+        public String typeOfAirplane;
+        public String nameOfPlane;
         private int quantity;
-        int passangersCapacity; // по умолчанию "паблик"
-        float cargoWeightCapacity; // по умолчанию "паблик"
-        float cargoVolumeCapacity; // по умолчанию "паблик"
+        public int passangersCapacity;
+        public float cargoWeightCapacity;
+        public float cargoVolumeCapacity;
         public float ticketsPrice;
         protected float fuelCapacity;
-        boolean isRefuel; // по умолчанию "паблик"
+        public boolean ifRefuel;
 
-        public Airplane(String nameOfPlane, int quantity, float fuelCapacity, boolean isRefuel) { // указываем что вносим в базу???????
+        public Airplane(String nameOfPlane, int quantity, float fuelCapacity, boolean ifRefuel) { // указываем что вносим в базу
             this.nameOfPlane = nameOfPlane;
             this.quantity = quantity;
             this.fuelCapacity = fuelCapacity;
-            this.isRefuel = isRefuel;
+            this.ifRefuel = ifRefuel;
         }
 
         public String getNameOfPlane() { // возвращаем имя самолета
@@ -58,13 +61,13 @@ public class Airplanes{
             this.fuelCapacity = fuelCapacity;
         }
 
-        public boolean getIsRefuel(){ // возвращаем "Заправлен ли самолет"
-            return this.isRefuel;
+        public boolean getIfRefuel(){ // возвращаем "Заправлен ли самолет"
+            return this.ifRefuel;
         }
 
-        public void setIsrefuel(boolean isRefuel) { //уст. атрибуту класса значение атрибута метода + проверка
-            if (fuelCapacity >= 2000) {
-                this.isRefuel = isRefuel;
+        public void setIfRefuel(boolean ifRefuel) { //уст. атрибуту класса значение атрибута метода + проверка
+            if (getFuelCapacity() >= 2000) {
+                this.ifRefuel = ifRefuel;
             } else {
                 System.out.println("FUEL IS NOT ENOUGH TO FLY");
             }
