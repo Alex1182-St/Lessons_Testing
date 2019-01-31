@@ -1,90 +1,118 @@
-public class Airplanes{
+public class Airplanes {
 
-    public void main(String[] args) { // на static "ругается", static убрал
+    public String typeOfAirplane;
+    public String nameOfPlane;
+    private int quantity;
+    public int passangersCapacity;
+    public float cargoWeightCapacity;
+    public float cargoVolumeCapacity;
+    public float ticketsPrice;
+    protected float fuelCapacity;
+    public boolean ifRefuel;
 
-
-        Airplane newAirplane = new Airplane ();
-
-        System.out.println(newAirplane.getNameOfPlane());
-        newAirplane.setNameOfPlane();
-        System.out.println(newAirplane.getNameOfPlane());
-
-        System.out.println(newAirplane.getQuantity());
-
-        System.out.println(newAirplane.getFuelCapacity());
-
-        System.out.println(newAirplane.getIfRefuel());
-
-
-        Airplane AN225 = new Airplane("Antonov An-225 Mriya", 2, 1000, true);
-
-        System.out.println(AN225.getNameOfPlane()); //выведет имя "Antonov An-225 Mriya"
-        AN225.setNameOfPlane("Antonov225");
-        System.out.println(AN225.getNameOfPlane()); //выведет "Antonov225"
-
-        System.out.println(AN225.getQuantity()); // ничего не виведет, будет ошибка, потому, что атрибут "приват"
-
-        System.out.println(AN225.getFuelCapacity()); // выведет "1000"
-
-        System.out.println(AN225.getIfRefuel()); // выведет "FUEL IS NOT ENOUGH TO FLY"
+    public Airplanes(String nameOfPlane, int quantity, int passangersCapacity, float cargoWeightCapacity, float fuelCapacity, boolean ifRefuel) {
+        this.nameOfPlane = nameOfPlane;
+        this.quantity = quantity;
+        this.passangersCapacity = passangersCapacity;
+        this.cargoWeightCapacity = cargoWeightCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.ifRefuel = ifRefuel;
     }
 
-    public class Airplane {
+    public String getTypeOfAirplane() {
+        return typeOfAirplane;
+    }
 
-        public String typeOfAirplane;
-        public String nameOfPlane;
-        private int quantity;
-        public int passangersCapacity;
-        public float cargoWeightCapacity;
-        public float cargoVolumeCapacity;
-        public float ticketsPrice;
-        protected float fuelCapacity;
-        public boolean ifRefuel;
+    public void setTypeOfAirplane(String typeOfAirplane) {
+        this.typeOfAirplane = typeOfAirplane;
+    }
 
-        public Airplane(String nameOfPlane, int quantity, float fuelCapacity, boolean ifRefuel) { // указываем что вносим в базу
-            this.nameOfPlane = nameOfPlane;
-            this.quantity = quantity;
-            this.fuelCapacity = fuelCapacity;
-            this.ifRefuel = ifRefuel;
-        }
+    public String getNameOfPlane() {
+        return nameOfPlane;
+    }
 
-        public String getNameOfPlane() { // возвращаем имя самолета
-            return this.nameOfPlane;
-        }
+    public void setNameOfPlane(String nameOfPlane) {
+        this.nameOfPlane = nameOfPlane;
+    }
 
-        public void setNameOfPlane(String nameOfPlane) { // присваиваем атрибуту имя нового самолета
-            this.nameOfPlane = nameOfPlane;
-        }
+    public int getQuantity() {
+        return quantity;
+    }
 
-        public int getQuantity() { // возвращаем количество самолетов
-            return this.quantity;
-        }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
-        public void setQuantity(int quantity) { // устанавливаем новое количество самолетов
-            this.quantity = quantity;
-        }
+    public int getPassangersCapacity() {
+        return passangersCapacity;
+    }
 
-        public float getFuelCapacity() { //возвращаем количество топлива
-            return this.fuelCapacity;
-        }
+    public void setPassangersCapacity(int passangersCapacity) {
+        this.passangersCapacity = passangersCapacity;
+    }
 
-        public void setFuelCapacity(float fuelCapacity){ // устанавливаем новое значение топлива
-            this.fuelCapacity = fuelCapacity;
-        }
+    public float getCargoWeightCapacity() {
+        return cargoWeightCapacity;
+    }
 
-        public boolean getIfRefuel(){ // возвращаем "Заправлен ли самолет"
-            return this.ifRefuel;
-        }
+    public void setCargoWeightCapacity(float cargoWeightCapacity) {
+        this.cargoWeightCapacity = cargoWeightCapacity;
+    }
 
-        public void setIfRefuel(boolean ifRefuel) { //уст. атрибуту класса значение атрибута метода + проверка
-            if (getFuelCapacity() >= 2000) {
-                this.ifRefuel = ifRefuel;
-            } else {
-                System.out.println("FUEL IS NOT ENOUGH TO FLY");
-            }
+    public float getCargoVolumeCapacity() {
+        return cargoVolumeCapacity;
+    }
+
+    public void setCargoVolumeCapacity(float cargoVolumeCapacity) {
+        this.cargoVolumeCapacity = cargoVolumeCapacity;
+    }
+
+    public float getTicketsPrice() {
+        return ticketsPrice;
+    }
+
+    public void setTicketsPrice(float ticketsPrice) {
+        this.ticketsPrice = ticketsPrice;
+    }
+
+    public float getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    public void setFuelCapacity(float fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    public boolean isIfRefuel() {
+        return ifRefuel;
+    }
+
+    public void setIfRefuel(boolean ifRefuel) {
+        this.ifRefuel = ifRefuel;
+    }
+
+
+
+    public void fuelChecking(){
+
+        if (isIfRefuel() = true) {
+            System.out.println("Airplane is ready to fly");
+        } else {
+            System.out.println("FUEL IS NOT ENOUGH TO FLY");
         }
     }
+
+    public void startRefuel(){}
+
+
+    public void startTakeOff(){}
+
+
+    public void startLanding(){}
+
+
 }
+
 
 
 

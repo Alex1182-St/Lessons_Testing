@@ -11,22 +11,35 @@ public class MobilePhones
     int PhotoCameraPixels;
     int batteryCapacity;
 
-    void startCalling() {
+    public MobilePhones(String nameOfMobilePhone, String nameOfPhoneOS, float phoneDisplaySize, float price, int batteryCapacity) {
+        this.nameOfMobilePhone = nameOfMobilePhone;
+        this.nameOfPhoneOS = nameOfPhoneOS;
+        this.phoneDisplaySize = phoneDisplaySize;
+        this.price = price;
+        this.batteryCapacity = batteryCapacity;
     }
 
-    void startBatteryCharging() {
+    public void startbuying() {
     }
 
-    void startWebSurfing() {
+    public void startCalling() {
     }
 
-    void makingPhotography() {
+    public void startBatteryCharging() {
     }
 
-    void creatingVideo() {
+    public void startWebSurfing() {
     }
 
-    void Gaming() {
+    public void makingPhotography() {
+    }
+
+    public void runGame() {
+    }
+
+    public static void main(String[] args) {
+
+
     }
 
 }

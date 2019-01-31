@@ -2,28 +2,111 @@ public class UnmannedAerialVehicle
 {
     String typeOfUAV;
     String nameOfUAV;
-    int quantity;
-    float maxCargoWeight;
     String typeOfEngine;
     String maxTimeOfFlying;
+    float maxCargoWeight;
+    int quantity;
     int maxHeightOfFlying;
     int maxFlyingSpeed;
     boolean IsCamera;
 
-
-    void startUAVTakeoff() {
+    public UnmannedAerialVehicle(String nameOfUAV, String typeOfEngine, float maxCargoWeight, int maxHeightOfFlying, int maxFlyingSpeed, boolean isCamera) {
+        this.nameOfUAV = nameOfUAV;
+        this.typeOfEngine = typeOfEngine;
+        this.maxCargoWeight = maxCargoWeight;
+        this.maxHeightOfFlying = maxHeightOfFlying;
+        this.maxFlyingSpeed = maxFlyingSpeed;
+        IsCamera = isCamera;
     }
 
-    void increaseFlyingSpeed() {
+    public String getTypeOfUAV() {
+        return typeOfUAV;
     }
 
-    void executeAutomaticReturning() {
+    public void setTypeOfUAV(String typeOfUAV) {
+        this.typeOfUAV = typeOfUAV;
     }
 
-    void startUAVVideoCamera() {
+    public String getNameOfUAV() {
+        return nameOfUAV;
     }
 
-    void startUAVLanding() {
+    public void setNameOfUAV(String nameOfUAV) {
+        this.nameOfUAV = nameOfUAV;
     }
 
+    public String getTypeOfEngine() {
+        return typeOfEngine;
+    }
+
+    public void setTypeOfEngine(String typeOfEngine) {
+        this.typeOfEngine = typeOfEngine;
+    }
+
+    public String getMaxTimeOfFlying() {
+        return maxTimeOfFlying;
+    }
+
+    public void setMaxTimeOfFlying(String maxTimeOfFlying) {
+        this.maxTimeOfFlying = maxTimeOfFlying;
+    }
+
+    public float getMaxCargoWeight() {
+        return maxCargoWeight;
+    }
+
+    public void setMaxCargoWeight(float maxCargoWeight) {
+        this.maxCargoWeight = maxCargoWeight;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public int getMaxHeightOfFlying() {
+        return maxHeightOfFlying;
+    }
+
+    public void setMaxHeightOfFlying(int maxHeightOfFlying) {
+        this.maxHeightOfFlying = maxHeightOfFlying;
+    }
+
+    public int getMaxFlyingSpeed() {
+        return maxFlyingSpeed;
+    }
+
+    public void setMaxFlyingSpeed(int maxFlyingSpeed) {
+        this.maxFlyingSpeed = maxFlyingSpeed;
+    }
+
+    public boolean isCamera() {
+        return IsCamera;
+    }
+
+    public void setCamera(boolean camera) {
+        IsCamera = camera;
+    }
+
+    public void startUAVTakeoff() {
+    }
+
+    public void increaseFlyingSpeed() {
+    }
+
+    public void executeAutomaticReturning() {
+    }
+
+    public void startUAVVideoCamera() {
+    }
+
+    public void startUAVLanding() {
+    }
+
+    public static void main(String[] args) {
+
+    }
 }

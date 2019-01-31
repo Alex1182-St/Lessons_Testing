@@ -8,22 +8,86 @@ public class Food
     boolean isFrozen;
     boolean isWashed;
 
-    void startWashing() {
+    public Food(String typeOfFood, int quantity, float weight, float price, boolean isWashed) {
+        this.typeOfFood = typeOfFood;
+        this.quantity = quantity;
+        this.weight = weight;
+        this.price = price;
+        this.isWashed = isWashed;
     }
 
-    void moveToFreezer() {
+    public String getTypeOfFood() {
+        return typeOfFood;
     }
 
-    void moveToDishes() {
+    public void setTypeOfFood(String typeOfFood) {
+        this.typeOfFood = typeOfFood;
     }
 
-    void startEating() {
+    public int getQuantity() {
+        return quantity;
     }
 
-    void startCutting() {
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 
-    void startCooking() {
+    public float getWeight() {
+        return weight;
     }
 
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public boolean isFresh() {
+        return isFresh;
+    }
+
+    public void setFresh(boolean fresh) {
+        isFresh = fresh;
+    }
+
+    public boolean isFrozen() {
+        return isFrozen;
+    }
+
+    public void setFrozen(boolean frozen) {
+        isFrozen = frozen;
+    }
+
+    public boolean isWashed() {
+        return isWashed;
+    }
+
+    public void setWashed(boolean washed) {
+        isWashed = washed;
+    }
+
+    public void startWashing() {
+    }
+
+    public void startCooling() {
+    }
+
+    public void startCutting() {
+    }
+
+    public void startCooking() {
+    }
+
+    public void startEating() {
+    }
+
+    public static void main(String[] args) {
+
+    }
 }
