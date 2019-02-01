@@ -19,7 +19,6 @@ public class SnowClearingMachine
     public String getTypeOfChassis() {
         return typeOfChassis;
     }
-
     public void setTypeOfChassis(String typeOfChassis) {
         this.typeOfChassis = typeOfChassis;
     }
@@ -27,7 +26,6 @@ public class SnowClearingMachine
     public String getNameOfProducer() {
         return nameOfProducer;
     }
-
     public void setNameOfProducer(String nameOfProducer) {
         this.nameOfProducer = nameOfProducer;
     }
@@ -35,7 +33,6 @@ public class SnowClearingMachine
     public int getQuantity() {
         return quantity;
     }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
@@ -43,7 +40,6 @@ public class SnowClearingMachine
     public int getEnginePower() {
         return enginePower;
     }
-
     public void setEnginePower(int enginePower) {
         this.enginePower = enginePower;
     }
@@ -51,7 +47,6 @@ public class SnowClearingMachine
     public float getFuelConsumption() {
         return fuelConsumption;
     }
-
     public void setFuelConsumption(float fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
@@ -59,21 +54,26 @@ public class SnowClearingMachine
     public boolean isIfRefuel() {
         return ifRefuel;
     }
-
     public void setIfRefuel(boolean ifRefuel) {
         this.ifRefuel = ifRefuel;
     }
 
-    public void startRefuel() {
-    }
-
-    public void startSnowCleaning() {
-    }
-
-    public void startEngineMaintenance() {
-    }
 
     public static void main(String[] args) {
+
+
+        public void myMethodRefuel() {
+        }
+
+        public void myMethodEngineStart(){
+        }
+
+        public void myMethodSnowCleaning() {
+        }
+
+        public void myMethodEngineMaintenance() {
+        }
+
 
     }
 }

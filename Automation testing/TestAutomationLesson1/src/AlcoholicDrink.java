@@ -10,7 +10,6 @@ public class AlcoholicDrink { // создаю класс объекта
 
 
         // создаю конструктор объекта
-
         public AlcoholicDrink(String typeOfDrink, float bottleVolume, float price, boolean ifCold) {
             this.typeOfDrink = typeOfDrink;
             this.bottleVolume = bottleVolume;
@@ -20,73 +19,44 @@ public class AlcoholicDrink { // создаю класс объекта
 
         //создаю геттер и сеттер ALT+INSERT (IDEA)
 
-        public String getTypeOfDrink() {
-            return typeOfDrink;
-        }
 
-        public void setTypeOfDrink(String typeOfDrink) {
-            this.typeOfDrink = typeOfDrink;
-        }
+    public String getTypeOfDrink() {
+        return typeOfDrink; }
+    public void setTypeOfDrink(String typeOfDrink) {
+        this.typeOfDrink = typeOfDrink;
+    }
 
-        public String getNameOfProducer() {
-            return nameOfProducer;
-        }
+    public String getNameOfProducer() {
+        return nameOfProducer; }
+    public void setNameOfProducer(String nameOfProducer) {
+        this.nameOfProducer = nameOfProducer;
+    }
 
-        public void setNameOfProducer(String nameOfProducer) {
-            this.nameOfProducer = nameOfProducer;
-        }
+    public String getStrengthOfDrink() {
+        return strengthOfDrink; }
+    public void setStrengthOfDrink(String strengthOfDrink) {
+        this.strengthOfDrink = strengthOfDrink;
+    }
 
-        public String getStrengthOfDrink() {
-            return strengthOfDrink;
-        }
+    public float getBottleVolume() {
+        return bottleVolume; }
+    public void setBottleVolume(float bottleVolume) {
+        this.bottleVolume = bottleVolume;
+    }
 
-        public void setStrengthOfDrink(String strengthOfDrink) {
-            this.strengthOfDrink = strengthOfDrink;
-        }
+    public float getPrice() {
+        return price; }
+    public void setPrice(float price) {
+        this.price = price;
+    }
 
-        public float getBottleVolume() {
-            return bottleVolume;
-        }
+    public boolean isIfCold() {
+        return ifCold; }
+    public void setIfCold(boolean ifCold) {
+        this.ifCold = ifCold;
+    }
 
-        public void setBottleVolume(float bottleVolume) {
-            this.bottleVolume = bottleVolume;
-        }
-
-        public float getPrice() {
-            return price;
-        }
-
-        public void setPrice(float price) {
-            this.price = price;
-        }
-
-        public boolean isIfCold() {
-            return ifCold;
-        }
-
-
-        // Methods
-
-        public void setIfCold(boolean ifCold) {
-            this.ifCold = ifCold;
-        }
-
-        public void showColdDrinks() throws Exception {
-            if(AlcoholicDrink.isIfCold().contains(true))
-            {
-                System.out.println("Cold drinks are" + AlcoholicDrink.getTypeOfDrink());
-            }
-            else
-                {System.out.println("Not cold drinks are" + AlcoholicDrink.getTypeOfDrink());}
-
-        }
-
-        public void Mymethod1(){}
-        public void Mymethod2(){}
-
-
-
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
         // создаю новый объект Дринк1
         AlcoholicDrink Drink1 = new AlcoholicDrink("XXX", 0.500f,500.5f,false);
@@ -94,10 +64,31 @@ public class AlcoholicDrink { // создаю класс объекта
         // создаю новый объект Дринк2
         AlcoholicDrink Drink2 = new AlcoholicDrink("yyyyy",0.7f,205.7f,true);
 
-            System.out.println(Drink1.getBottleVolume());
-            System.out.println(Drink1.getPrice());
-            System.out.println(Drink2.isIfCold());
+
+            // Methods
+
+            public void setIfCold(boolean ifCold) {
+                this.ifCold = ifCold;
+            }
+
+            public void showColdDrinks() throws Exception {
+                if(AlcoholicDrink.isIfCold().contains(true))
+                {
+                    System.out.println("Cold drinks are" + AlcoholicDrink.getTypeOfDrink());
+                }
+                else
+                {System.out.println("Not cold drinks are" + AlcoholicDrink.getTypeOfDrink());}
+
             System.out.println(AlcoholicDrink.showColdDrinks());
+            }
+
+        System.out.println(Drink1.getBottleVolume());
+        System.out.println(Drink1.getPrice());
+        System.out.println(Drink2.isIfCold());
+
+
+            public void Mymethod1(){}
+            public void Mymethod2(){}
 
 
 

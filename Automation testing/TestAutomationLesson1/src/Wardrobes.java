@@ -19,7 +19,6 @@ public class Wardrobes
     public int getQuantity() {
         return quantity;
     }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
@@ -27,7 +26,6 @@ public class Wardrobes
     public float getHeight() {
         return height;
     }
-
     public void setHeight(float height) {
         this.height = height;
     }
@@ -35,7 +33,6 @@ public class Wardrobes
     public float getWidth() {
         return width;
     }
-
     public void setWidth(float width) {
         this.width = width;
     }
@@ -43,7 +40,6 @@ public class Wardrobes
     public float getDepth() {
         return depth;
     }
-
     public void setDepth(float depth) {
         this.depth = depth;
     }
@@ -51,7 +47,6 @@ public class Wardrobes
     public String getTypeOfMaterial() {
         return typeOfMaterial;
     }
-
     public void setTypeOfMaterial(String typeOfMaterial) {
         this.typeOfMaterial = typeOfMaterial;
     }
@@ -59,29 +54,39 @@ public class Wardrobes
     public String getTypeOfDoors() {
         return typeOfDoors;
     }
-
     public void setTypeOfDoors(String typeOfDoors) {
         this.typeOfDoors = typeOfDoors;
     }
 
-    public void openTheDoor() {
-    }
 
-    public void putClothesOnShelf() {
-
-    }
-
-    public void hideHimselfInTheWardrobe() {
-
-    }
-
-    public void calculateVolume() {
-
-
-
-    }
 
     public static void main(String[] args) {
+
+
+        Wardrobes SteelOak = new Wardrobes(1,2.55f,2.05f,1.1f,"Oak","Manual");
+
+        public void calculateVolume() {
+
+            float Volume = SteelOak.height*SteelOak.width*SteelOak.depth;
+
+            System.out.println(Volume);
+
+        }
+
+
+
+        public void openTheDoor() {
+        }
+
+        public void putClothesOnShelf() {
+
+        }
+
+        public void hideHimselfInTheWardrobe() {
+
+        }
+
+
 
     }
 }

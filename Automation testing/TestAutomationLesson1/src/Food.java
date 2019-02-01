@@ -19,7 +19,6 @@ public class Food
     public String getTypeOfFood() {
         return typeOfFood;
     }
-
     public void setTypeOfFood(String typeOfFood) {
         this.typeOfFood = typeOfFood;
     }
@@ -27,7 +26,6 @@ public class Food
     public int getQuantity() {
         return quantity;
     }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
@@ -35,7 +33,6 @@ public class Food
     public float getWeight() {
         return weight;
     }
-
     public void setWeight(float weight) {
         this.weight = weight;
     }
@@ -43,7 +40,6 @@ public class Food
     public float getPrice() {
         return price;
     }
-
     public void setPrice(float price) {
         this.price = price;
     }
@@ -51,7 +47,6 @@ public class Food
     public boolean isFresh() {
         return isFresh;
     }
-
     public void setFresh(boolean fresh) {
         isFresh = fresh;
     }
@@ -59,7 +54,6 @@ public class Food
     public boolean isFrozen() {
         return isFrozen;
     }
-
     public void setFrozen(boolean frozen) {
         isFrozen = frozen;
     }
@@ -67,27 +61,25 @@ public class Food
     public boolean isWashed() {
         return isWashed;
     }
-
     public void setWashed(boolean washed) {
         isWashed = washed;
     }
 
-    public void startWashing() {
-    }
 
-    public void startCooling() {
-    }
-
-    public void startCutting() {
-    }
-
-    public void startCooking() {
-    }
-
-    public void startEating() {
-    }
 
     public static void main(String[] args) {
+
+        public void myMethodWashing() {
+        }
+        public void myMethodCooling() {
+        }
+        public myMethodCutting() {
+            return
+        }
+        public void myMethodCooking() {
+        }
+        public void myMethodEating() {
+        }
 
     }
 }

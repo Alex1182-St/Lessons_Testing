@@ -15,55 +15,44 @@ public class HairClippers
     }
 
     public String getMarkOfHairClipper() {
-        return markOfHairClipper;
-    }
-
+        return markOfHairClipper; }
     public void setMarkOfHairClipper(String markOfHairClipper) {
         this.markOfHairClipper = markOfHairClipper;
     }
-
     public int getQuantity() {
-        return quantity;
-    }
-
+        return quantity; }
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-
     public int getElectricityConsumption() {
-        return electricityConsumption;
-    }
-
+        return electricityConsumption; }
     public void setElectricityConsumption(int electricityConsumption) {
         this.electricityConsumption = electricityConsumption;
     }
-
     public int getWireLength() {
-        return wireLength;
-    }
-
+        return wireLength; }
     public void setWireLength(int wireLength) {
         this.wireLength = wireLength;
     }
 
     public boolean isHasReplacebleCutters() {
-        return hasReplacebleCutters;
-    }
-
+        return hasReplacebleCutters; }
     public void setHasReplacebleCutters(boolean hasReplacebleCutters) {
         this.hasReplacebleCutters = hasReplacebleCutters;
     }
 
-    void startHairCutting() {
-    }
 
-    void startCuttersCleaning() {
-    }
-
-    void changeCutterType() {
-    }
 
     public static void main(String[] args) {
+
+        public void myMethodHairCutting() {
+        }
+
+        public void myMethodCuttersCleaning() {
+        }
+
+        public void myMethodChangeCutterType() {
+        }
 
     }
 }

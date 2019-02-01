@@ -16,67 +16,60 @@ public class Lamps
     }
 
     public String getNameOfProducer() {
-        return nameOfProducer;
-    }
-
+        return nameOfProducer; }
     public void setNameOfProducer(String nameOfProducer) {
         this.nameOfProducer = nameOfProducer;
     }
 
     public String getTypeOfLamp() {
-        return typeOfLamp;
-    }
-
+        return typeOfLamp; }
     public void setTypeOfLamp(String typeOfLamp) {
         this.typeOfLamp = typeOfLamp;
     }
 
     public int getQuantity() {
-        return quantity;
-    }
-
+        return quantity; }
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
     public int getLightTemperature() {
-        return lightTemperature;
-    }
-
+        return lightTemperature; }
     public void setLightTemperature(int lightTemperature) {
         this.lightTemperature = lightTemperature;
     }
 
     public int getLightbuldPower() {
-        return lightbuldPower;
-    }
-
+        return lightbuldPower; }
     public void setLightbuldPower(int lightbuldPower) {
         this.lightbuldPower = lightbuldPower;
     }
 
     public String getLightbulbType() {
-        return lightbulbType;
-    }
-
+        return lightbulbType; }
     public void setLightbulbType(String lightbulbType) {
         this.lightbulbType = lightbulbType;
     }
 
-    public void turnLightOn() {
-    }
 
-    public void turnLightOff() {
-    }
-
-    public void replaceLightbulb() {
-    }
-
-    public void changeLightbulbType() {
-
-    }
 
     public static void main(String[] args) {
+
+        public void myMethodLightOn() {
+        }
+
+        public void myMethodLightOff() {
+        }
+
+        public myMethodReplaceLightbulb() {
+            return
+        }
+
+        public void myMethodChangeLightbulbType() {
+            return
+
+        }
+
 
     }
 }

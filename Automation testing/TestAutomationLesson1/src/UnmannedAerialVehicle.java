@@ -22,7 +22,6 @@ public class UnmannedAerialVehicle
     public String getTypeOfUAV() {
         return typeOfUAV;
     }
-
     public void setTypeOfUAV(String typeOfUAV) {
         this.typeOfUAV = typeOfUAV;
     }
@@ -30,7 +29,6 @@ public class UnmannedAerialVehicle
     public String getNameOfUAV() {
         return nameOfUAV;
     }
-
     public void setNameOfUAV(String nameOfUAV) {
         this.nameOfUAV = nameOfUAV;
     }
@@ -38,7 +36,6 @@ public class UnmannedAerialVehicle
     public String getTypeOfEngine() {
         return typeOfEngine;
     }
-
     public void setTypeOfEngine(String typeOfEngine) {
         this.typeOfEngine = typeOfEngine;
     }
@@ -46,7 +43,6 @@ public class UnmannedAerialVehicle
     public String getMaxTimeOfFlying() {
         return maxTimeOfFlying;
     }
-
     public void setMaxTimeOfFlying(String maxTimeOfFlying) {
         this.maxTimeOfFlying = maxTimeOfFlying;
     }
@@ -54,7 +50,6 @@ public class UnmannedAerialVehicle
     public float getMaxCargoWeight() {
         return maxCargoWeight;
     }
-
     public void setMaxCargoWeight(float maxCargoWeight) {
         this.maxCargoWeight = maxCargoWeight;
     }
@@ -62,7 +57,6 @@ public class UnmannedAerialVehicle
     public int getQuantity() {
         return quantity;
     }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
@@ -78,7 +72,6 @@ public class UnmannedAerialVehicle
     public int getMaxFlyingSpeed() {
         return maxFlyingSpeed;
     }
-
     public void setMaxFlyingSpeed(int maxFlyingSpeed) {
         this.maxFlyingSpeed = maxFlyingSpeed;
     }
@@ -86,27 +79,28 @@ public class UnmannedAerialVehicle
     public boolean isCamera() {
         return IsCamera;
     }
-
     public void setCamera(boolean camera) {
         IsCamera = camera;
     }
 
-    public void startUAVTakeoff() {
-    }
 
-    public void increaseFlyingSpeed() {
-    }
-
-    public void executeAutomaticReturning() {
-    }
-
-    public void startUAVVideoCamera() {
-    }
-
-    public void startUAVLanding() {
-    }
 
     public static void main(String[] args) {
+
+        public void myMethodUAVTakeoff() {
+        }
+
+        public void myMethodIncreaseFlyingSpeed() {
+        }
+
+        public void myMethodExecuteAutomaticReturning() {
+        }
+
+        public void myMethodVideoRecording() {
+        }
+
+        public void myMethodUAVLanding() {
+        }
 
     }
 }

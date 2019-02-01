@@ -23,7 +23,6 @@ public class PersonalComputers
     public String getNameOfProcessor() {
         return nameOfProcessor;
     }
-
     public void setNameOfProcessor(String nameOfProcessor) {
         this.nameOfProcessor = nameOfProcessor;
     }
@@ -31,7 +30,6 @@ public class PersonalComputers
     public String getNameOfOS() {
         return nameOfOS;
     }
-
     public void setNameOfOS(String nameOfOS) {
         this.nameOfOS = nameOfOS;
     }
@@ -39,7 +37,6 @@ public class PersonalComputers
     public String getNameOfVideoCard() {
         return nameOfVideoCard;
     }
-
     public void setNameOfVideoCard(String nameOfVideoCard) {
         this.nameOfVideoCard = nameOfVideoCard;
     }
@@ -47,7 +44,6 @@ public class PersonalComputers
     public int getProcessorCoresQuantity() {
         return processorCoresQuantity;
     }
-
     public void setProcessorCoresQuantity(int processorCoresQuantity) {
         this.processorCoresQuantity = processorCoresQuantity;
     }
@@ -55,7 +51,6 @@ public class PersonalComputers
     public int getProcessorFrequency() {
         return processorFrequency;
     }
-
     public void setProcessorFrequency(int processorFrequency) {
         this.processorFrequency = processorFrequency;
     }
@@ -63,7 +58,6 @@ public class PersonalComputers
     public int getMemoryRAMVolume() {
         return memoryRAMVolume;
     }
-
     public void setMemoryRAMVolume(int memoryRAMVolume) {
         this.memoryRAMVolume = memoryRAMVolume;
     }
@@ -71,7 +65,6 @@ public class PersonalComputers
     public int getVideoCardMemoryVolume() {
         return videoCardMemoryVolume;
     }
-
     public void setVideoCardMemoryVolume(int videoCardMemoryVolume) {
         this.videoCardMemoryVolume = videoCardMemoryVolume;
     }
@@ -79,21 +72,26 @@ public class PersonalComputers
     public int getPowerOfPowerSupply() {
         return powerOfPowerSupply;
     }
-
     public void setPowerOfPowerSupply(int powerOfPowerSupply) {
         this.powerOfPowerSupply = powerOfPowerSupply;
     }
 
-    public void startBIOSloading() {
-    }
-
-    public void startOSloading() {
-    }
-
-    public void startProgramExecution() {
-    }
 
     public static void main(String[] args) {
+
+        public void myMethodBIOSloading() {
+        }
+
+        public void myMethodOSloading() {
+        }
+
+        public void myMethodProgramExecution() {
+        }
+
+        public void myMethodShutdown(){
+
+        }
+
 
     }
 }
