@@ -72,14 +72,15 @@ public class AlcoholicDrink { // создаю класс объекта
             }
 
             public void showColdDrinks() throws Exception {
-                if(AlcoholicDrink.isIfCold().contains(true))
+                if(AlcoholicDrink.isIfCold().contains(true)) // выдает ошибку  - non static method cannot be referenced from static context
                 {
                     System.out.println("Cold drinks are" + AlcoholicDrink.getTypeOfDrink());
-                }
+                } // выдает ошибку  - non static method cannot be referenced from static context, Но я пишу get
                 else
                 {System.out.println("Not cold drinks are" + AlcoholicDrink.getTypeOfDrink());}
+            // выдает ошибку  - non static method cannot be referenced from static context, Но я пишу get
 
-            System.out.println(AlcoholicDrink.showColdDrinks());
+            System.out.println(AlcoholicDrink.showColdDrinks()); //Cannot resolve method showColdDrinks
             }
 
         System.out.println(Drink1.getBottleVolume());

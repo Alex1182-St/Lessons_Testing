@@ -79,7 +79,7 @@ public class Airplanes {
         Airplanes AN225 = new Airplanes("Antonov-225 Mriya",1,30,500.5f,200.5f,true)
 
         public void myMethodFuelChecking(){
-            if (isIfRefuel() = true) {
+            if (isIfRefuel() = true) {   // выдает ошибку  - non static method isIfRefuel cannot be referenced from static context
                 System.out.println("Airplane is ready to fly");
             } else {
                 System.out.println("FUEL IS NOT ENOUGH TO FLY");

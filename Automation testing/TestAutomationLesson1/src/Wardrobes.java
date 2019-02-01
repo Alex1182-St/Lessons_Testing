@@ -16,9 +16,7 @@ public class Wardrobes
         this.typeOfDoors = typeOfDoors;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
+    public int getQuantity() { return quantity; }
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
@@ -73,16 +71,14 @@ public class Wardrobes
 
         }
 
-
-
-        public void openTheDoor() {
+        public void myMethodOpenTheDoor() {
         }
 
-        public void putClothesOnShelf() {
+        public void myMethodPutClothesOnShelf() {
 
         }
 
-        public void hideHimselfInTheWardrobe() {
+        public void myMethodHideHimselfInTheWardrobe() {
 
         }
 
