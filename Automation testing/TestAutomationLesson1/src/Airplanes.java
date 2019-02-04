@@ -74,7 +74,7 @@ public class Airplanes {
     }
 
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
 
         Airplanes AN225 = new Airplanes("Antonov-225 Mriya",1,30,500.5f,200.5f,true)
 
